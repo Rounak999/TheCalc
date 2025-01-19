@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheCalc</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        select, input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <h1>TheCalc Operation</h1>
+        <label for="operation">Choose an operation:</label>
+        <select name="operation" id="operation" required>
+            <option value="addition">Addition</option>
+            <option value="mul">Multiplication</option>
+            <option value="subs">Subtraction</option>
+        </select><br><br>
+
+        <label for="num1">Enter first number:</label>
+        <input type="number" name="num1" id="num1" required><br><br>
+
+        <label for="num2">Enter second number:</label>
+        <input type="number" name="num2" id="num2" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
