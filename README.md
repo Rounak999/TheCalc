@@ -15,5 +15,5 @@ The flag is located at: /etc/flag.txt
 1. **Download the Docker Compose File:**
 2. **Run the Docker Compose Command:**
    ```bash
- docker-compose up -d
+   docker-compose up -d
 
